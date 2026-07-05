@@ -69,16 +69,8 @@ const recentPosts = (await getCollection('blog'))
 		<Header />
 		<main>
 			<section class="profile">
-				<h1>{AUTHOR_NAME}</h1>
-				<p class="handle">@seckie</p>
-				<p class="role">Engineering Manager @ SaaS company</p>
-				<p class="bio">
-					SaaS運営企業でエンジニアリングマネージャーをしています。元フロントエンドエンジニア。
-					このサイトでは、エンジニアリングマネジメントやソフトウェア開発について書いていきます。
-				</p>
-				<p class="links">
-					<a href={GITHUB_URL} target="_blank" rel="noopener">GitHub</a>
-				</p>
+				<h1>{SITE_TITLE}</h1>
+                <p class="handle"><a href={GITHUB_URL} target="_blank" rel="noopener">@seckie</a></p>
 			</section>
 			<section class="recent-posts">
 				<h2>最近の記事</h2>
