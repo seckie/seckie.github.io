@@ -9,6 +9,7 @@ import profileImage from '../assets/profile2020_1080x1080-768x768.png';
 	description="Naoki Sekiguchi (seckie) のプロフィール"
 	pubDate={new Date('July 05 2026')}
 >
+	<p>
 	<Image
 		src={profileImage}
 		alt="Naoki Sekiguchi (seckie) のプロフィールイラスト"
@@ -16,16 +17,22 @@ import profileImage from '../assets/profile2020_1080x1080-768x768.png';
 		densities={[1, 2]}
 		style="border-radius: 50%; display: block; margin-inline: auto;"
 	/>
-	<p>Naoki Sekiguchi (seckie) です。</p>
-	<p>
-		SaaS運営企業でエンジニアリングマネージャーをしています。もともとはフロントエンドエンジニアとして、
-		Web標準・HTML/CSS/JavaScriptの世界でキャリアを積んできました。
 	</p>
-	<p>
-		このサイトでは、エンジニアリングマネジメント、チームづくり、ソフトウェア開発について
-		思ったことや学んだことを書いていきます。
+	<p style="text-align: center">
+    Naoki Sekiguchi<br />
+    Location: Kanagawa, Japan
 	</p>
-	<ul>
-		<li><a href="https://github.com/seckie" target="_blank" rel="noopener">GitHub</a></li>
-	</ul>
+    <h2>Career history</h2>
+    <ul>
+        <li>エンジニアリングマネージャー (2021〜)
+            <ul>
+                <li>プロジェクトマネジメント、チームマネジメント、採用</li>
+            </ul>
+        </li>
+        <li>フロントエンドエンジニア (2005〜)
+            <ul>
+                <li>HTML, CSS, JavaScript, TypeScript, React, Vue.js etc</li>
+            </ul>
+        </li>
+    </ul>
 </Layout>
