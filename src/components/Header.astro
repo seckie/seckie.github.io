@@ -1,11 +1,13 @@
 ---
 import { GITHUB_URL, SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
+
+const isHome = Astro.url.pathname === '/';
 ---
 
 <header>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<h2 class:list={{ 'is-home': isHome }}><a href="/">{SITE_TITLE}</a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
@@ -39,6 +41,9 @@ import HeaderLink from './HeaderLink.astro';
 	h2 a,
 	h2 a.active {
 		text-decoration: none;
+	}
+	h2.is-home {
+		visibility: hidden;
 	}
 	nav {
 		display: flex;
