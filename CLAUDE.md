@@ -20,7 +20,7 @@ Requires Node >= 22.12.0 (`engines` in package.json).
 
 ## Deployment
 
-Push to `master` triggers `.github/workflows/deploy.yml`, which builds with `withastro/action` (Node 24) and deploys to GitHub Pages. PRs against `master` run the build job only, not the deploy.
+Push to `main` triggers `.github/workflows/deploy.yml`, which builds with `withastro/action` (Node 24) and deploys to GitHub Pages. PRs against `main` run the build job only, not the deploy.
 
 ## Architecture
 

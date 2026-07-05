@@ -12,7 +12,7 @@ tags: ['astro', 'blog']
 - **フレームワーク**: Astro(公式 blog テンプレートベース)
 - **記事管理**: Markdown ファイルを GitHub リポジトリで管理
 - **ホスティング**: GitHub Pages
-- **デプロイ**: master ブランチへの push をトリガーに GitHub Actions で自動デプロイ
+- **デプロイ**: main ブランチへの push をトリガーに GitHub Actions で自動デプロイ
 
 ## 記事の書き方
 

@@ -47,4 +47,4 @@ frontmatter のフィールド:
 
 ## デプロイ
 
-`master` ブランチに push すると、GitHub Actions(`.github/workflows/deploy.yml`)が自動でビルドして GitHub Pages にデプロイします。
+`main` ブランチに push すると、GitHub Actions(`.github/workflows/deploy.yml`)が自動でビルドして GitHub Pages にデプロイします。
