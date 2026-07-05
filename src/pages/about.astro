@@ -1,5 +1,7 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from '../layouts/BlogPost.astro';
+import profileImage from '../assets/profile2020_1080x1080-768x768.png';
 ---
 
 <Layout
@@ -7,6 +9,13 @@ import Layout from '../layouts/BlogPost.astro';
 	description="Naoki Sekiguchi (seckie) のプロフィール"
 	pubDate={new Date('July 05 2026')}
 >
+	<Image
+		src={profileImage}
+		alt="Naoki Sekiguchi (seckie) のプロフィールイラスト"
+		width={300}
+		densities={[1, 2]}
+		style="border-radius: 50%; display: block; margin-inline: auto;"
+	/>
 	<p>Naoki Sekiguchi (seckie) です。</p>
 	<p>
 		SaaS運営企業でエンジニアリングマネージャーをしています。もともとはフロントエンドエンジニアとして、
