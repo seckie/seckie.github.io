@@ -1,0 +1,51 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/BlogPost.astro';
+import profileImage from '../assets/profile2020_1080x1080-768x768.png';
+---
+
+<Layout
+	title="About Me"
+	description="Naoki Sekiguchi (seckie) のプロフィール"
+	pubDate={new Date('July 05 2026')}
+>
+	<p>
+	<Image
+		src={profileImage}
+		alt="Naoki Sekiguchi (seckie) のプロフィールイラスト"
+		width={300}
+		densities={[1, 2]}
+		style="border-radius: 50%; display: block; margin-inline: auto;"
+	/>
+	</p>
+	<p style="text-align: center">
+    Naoki Sekiguchi<br />
+    <svg
+        role="img"
+        aria-label="Location"
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        style="vertical-align: -0.125em; margin-right: 0.3em;"
+    ><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg> 
+    Kanagawa, Japan
+	</p>
+    <h2>Career history</h2>
+    <ul>
+        <li>Engineering Manager (2021–)
+            <ul>
+                <li>Project management, team management, and hiring</li>
+            </ul>
+        </li>
+        <li>Front-end Engineer (2005–)
+            <ul>
+                <li>HTML, CSS, JavaScript, TypeScript, React, Vue.js, etc.</li>
+            </ul>
+        </li>
+    </ul>
+</Layout>
