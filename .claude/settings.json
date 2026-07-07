@@ -2,19 +2,18 @@
 	"permissions": {
 		"allow": [
 			"Bash(git status*)",
-			"Bash(git diff*)",
-			"Bash(git log*)",
 			"Bash(git checkout *)",
 			"Bash(git pull)",
-			"Bash(git pull *)",
 			"Bash(git add *)",
 			"Bash(git commit *)",
-			"Bash(git push *)",
+			"Bash(git push -u origin post/*)",
 			"Bash(git branch *)",
 			"Bash(gh pr create *)",
 			"Bash(gh pr view *)",
-			"Bash(npm run build)",
-			"Bash(export npm_config_cache=*)"
+			"Bash(npm run build)"
 		]
+	},
+	"env": {
+		"npm_config_cache": "/tmp/claude/npm-cache"
 	}
 }
