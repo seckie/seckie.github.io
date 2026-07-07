@@ -1,0 +1,34 @@
+{
+	"skill_name": "new-post",
+	"evals": [
+		{
+			"id": 0,
+			"prompt": "新しいブログ記事を書きたいです。トピックは「Claude Code でブログの記事作成ワークフローを自動化した話」。内容としては、Claude Code のスキル機能を使って記事テンプレートの作成から Draft PR 作成までを自動化したこと、ブランチは post/スラッグ 形式にしたこと、Draft PR にすることで書きかけ記事の誤公開を防いでいること、を書きたい。タグは claude-code と blog で。",
+			"expected_output": "src/content/blog/ に英語ケバブケースのスラッグで .md が作成され、schema に合う frontmatter と日本語の本文下書きが入り、post/<slug> ブランチにコミット・push され、main 向けの Draft PR が作成される",
+			"files": [],
+			"expectations": [
+				"Article .md file created under src/content/blog/ with an English kebab-case slug",
+				"Frontmatter has required fields (title, description, pubDate) and pubDate uses en-US 'MMM DD YYYY' format",
+				"Body is a Japanese draft with ## section headings",
+				"Branch name follows the post/<slug> convention",
+				"A pull request was opened against main and is a Draft",
+				"The branch changes exactly one file (the article) relative to main, and main itself is untouched",
+				"Tags are exactly ['claude-code', 'blog'] as the user requested"
+			]
+		},
+		{
+			"id": 1,
+			"prompt": "エンジニアリングマネージャーとしての1on1で心がけてること3つについて記事にしてほしい。3つは「傾聴に徹する」「必ずアクションアイテムを残す」「キャリアの話を定期的にする」。ファイル名とかタグはいい感じにやって",
+			"expected_output": "カジュアルな指示からスラッグ・タグ・タイトルを適切に決定し、3つのポイントをセクション化した日本語下書きを作成、post/<slug> ブランチで Draft PR まで作成される",
+			"files": [],
+			"expectations": [
+				"Article .md file created under src/content/blog/ with an English kebab-case slug",
+				"Frontmatter has required fields (title, description, pubDate) and pubDate uses en-US 'MMM DD YYYY' format",
+				"Body is a Japanese draft with ## section headings",
+				"Branch name follows the post/<slug> convention",
+				"A pull request was opened against main and is a Draft",
+				"The branch changes exactly one file (the article) relative to main, and main itself is untouched"
+			]
+		}
+	]
+}
