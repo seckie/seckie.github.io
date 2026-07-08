@@ -1,6 +1,6 @@
 ---
 name: new-post
-description: Create a new blog post for this site (seckie.github.io) end to end — scaffold a Markdown article in src/content/blog/ with a drafted Japanese body, commit it on a post/<slug> branch, push, and open a draft pull request. Use this whenever the user wants to write, start, add, or publish a blog post or article — 新しい記事を書きたい, ブログ記事を追加, 〜について記事を書いて — even if they only mention a topic they'd like to blog about, and even if they don't mention git or PRs.
+description: Use this skill every time the user wants a new article/post for this blog, no matter how casually they phrase it. Trigger whenever they bring up a topic, ネタ, or テーマ they want written up — 記事書きたい, 記事にしたい, 記事作って, ポスト書いて, ブログに載せたい, 下書き作って — even if it's just "何か書く" plus a topic idea, even if the structure isn't decided, and even if they mention only a tag or theme. A stated topic + any intent to write/draft/post = use this skill. Do not create the Markdown file by hand instead of using this skill; it owns the full flow (drafted Japanese body in src/content/blog/, post/<slug> branch, draft PR). Do NOT use it for editing or fixing existing posts, changing site design/pages/components, debugging the site, or committing unrelated work.
 ---
 
 # New Blog Post
